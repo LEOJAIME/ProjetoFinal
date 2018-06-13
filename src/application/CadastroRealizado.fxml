@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane onDragDetected="#Enviar" prefHeight="300.0" prefWidth="300.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.MainController">
+   <children>
+      <Label layoutX="68.0" layoutY="26.0" text="Bem Vindo" textFill="#f22c2c">
+         <font>
+            <Font name="Bell MT" size="36.0" />
+         </font>
+      </Label>
+      <Label fx:id="label" layoutX="122.0" layoutY="133.0" text="Label" />
+   </children>
+</AnchorPane>

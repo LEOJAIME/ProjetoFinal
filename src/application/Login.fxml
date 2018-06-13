@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="300.0" prefWidth="300.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.MainController">
+   <children>
+      <Button layoutX="201.0" layoutY="203.0" mnemonicParsing="false" onAction="#Enviar" text="Enviar" />
+      <TextField fx:id="txtEmail" layoutX="51.0" layoutY="74.0" prefHeight="25.0" prefWidth="208.0" promptText="Login" />
+      <TextField fx:id="txtSenha" layoutX="51.0" layoutY="115.0" prefHeight="25.0" prefWidth="208.0" promptText="Senha" />
+      <Label fx:id="lblCadastro" layoutX="109.0" layoutY="24.0" text="Login" textFill="#da2626">
+         <font>
+            <Font name="Bell MT" size="25.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
