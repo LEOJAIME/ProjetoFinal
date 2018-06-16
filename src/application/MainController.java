@@ -25,36 +25,22 @@ public class MainController implements Initializable
 		
 		@FXML
 		private Label lblCadastro;
-		
-		
 		@FXML
 		private TextField txtSenha;
-		
 		@FXML
 		private TextField txtEmail;
-		
 		@FXML 
 		private TextField txtNovoNome;
-		
 		@FXML
 		private TextField txtNovaSenha;
-		
 		@FXML
 		private TextField txtNovoEmail;
-		
 		@FXML
 		public static  Label label ;
-		
-		
 		@FXML
 		private  Label label1;
-		
-		
-
 		@FXML
 		private String Nome1  ;
-		
-		
 		@FXML
 		public static String Nome ;
 		@FXML
@@ -62,13 +48,6 @@ public class MainController implements Initializable
 		@FXML
 		public static String Email ;
 
-
-		
-		
-		
-	   
-		
-		
 		public void Enviar1 (ActionEvent event) throws IOException
 		{
 			
@@ -77,9 +56,6 @@ public class MainController implements Initializable
 			Email= txtNovoEmail.getText();
 		  
 			label1.setText(Nome);
-			
-			
-			
 			
 			if (txtNovoNome.getText().equals(Nome) && txtNovaSenha.getText().equals(Senha) &&
 					txtNovoEmail.getText().equals(Email))
@@ -92,33 +68,17 @@ public class MainController implements Initializable
 			
 			}
 		}	
-		
-		
-		
-	
-		
 		public void Enviar (ActionEvent event) throws IOException 
 		{			
-			
-			
-					
 			if (txtSenha.getText().equals(Senha) && txtEmail.getText().equals(Email))
 			{
-				
-				
-				
-				
 				Stage primaryStage = new Stage();
 				Parent root = FXMLLoader.load(getClass().getResource("/application/CadastroRealizado.fxml"));
 				
 				Scene scene = new Scene(root);
 				primaryStage.setScene(scene);
 				primaryStage.show();
-		
-				
-				
 			}
-			
 			else 
 			{
 				
